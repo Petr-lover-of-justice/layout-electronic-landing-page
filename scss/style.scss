@@ -3,6 +3,7 @@ body {
 }
 * {
   font-family: "Roboto";
+
 }
 :focus {
   outline: none;
@@ -16,10 +17,12 @@ h2 {
 }
 
 .container {
+  overflow: hidden;
   .center {
     margin: 0px 348px;
   }
-  header {
+  header {    
+ 
     max-width: 1920px;
     background: url(../img/backgroundHeder.png) no-repeat center,
       linear-gradient(217.93deg, #000c52 11.31%, #000051 60%);
@@ -64,6 +67,7 @@ h2 {
           font-size: 18px;
           text-decoration: none;
           float: right;
+          
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
         .mail {
@@ -130,7 +134,7 @@ h2 {
       }
     }
   }
-}
+
 .catalog {
   max-width: 1920px;
   .slider {
@@ -478,7 +482,6 @@ h2 {
       line-height: 18px;
       color: #fdfdfd;
       opacity: 0.6;
-      // opacity: 0.6;  
     }
     .call__accord{
       color: #fdfdfd;
@@ -535,7 +538,7 @@ footer {
     }
   }
 }
-
+}
 @media (max-width: 1000px) {
   .container {
     .supplies {
@@ -549,7 +552,8 @@ footer {
       margin: 0px 0px;
     }
     header {
-      width: 100vw;
+
+      width: 100%;
       height: 470px;
       .burger {
         max-width: 100vw;
@@ -650,7 +654,6 @@ footer {
             border: 1px solid gray;
             font-size: 10;
             z-index: 2;
-
             border-radius: 7px;
           }
         }
@@ -697,7 +700,7 @@ footer {
         margin-top: 45px;
         margin-left: auto;
         margin-right: auto;
-        width: 90vw;
+        width: 328px;
         display: block;
         &__input {
           width: 328px;
@@ -790,7 +793,9 @@ footer {
       }
     }
     .call {
-      height: 643px;
+      // height: 643px;
+     height:100%;
+      width: 100vw;
       h4 {
         font-style: normal;
         font-weight: 600;
@@ -805,7 +810,7 @@ footer {
         margin-right: auto;
       }
       &__text {
-        width: 90vw;
+        width: 328px;
         margin-top: 33px;
         margin-bottom: 40px;
         font-weight: 400;
@@ -815,20 +820,23 @@ footer {
         margin-left: auto;
         margin-right: auto;
       }
-      &-form {
+      &-form{
         display: block;
-        width: 328px;
+        width:328px;
         margin-right: auto;
         margin-left: auto;
-        &__input {
-          width: 328px;
+        .call-form__input {
+          width:328px;
           margin-top: 16px;
           height: 54px;
+          margin-right: auto;
+          margin-left: auto;
         }
-        button {
+        .button-send {
           width: 328px;
           margin-top: 21px;
           height: 54px;
+          border: 1px solid gray;
         }
       }
       &__afterword {

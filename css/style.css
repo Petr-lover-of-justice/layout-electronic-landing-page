@@ -18,6 +18,9 @@ h2 {
   text-transform: uppercase;
 }
 
+.container {
+  overflow: hidden;
+}
 .container .center {
   margin: 0px 348px;
 }
@@ -121,27 +124,26 @@ h2 {
   border: 1px solid #000051;
   padding-top: 16px;
 }
-
-.catalog {
+.container .catalog {
   max-width: 1920px;
 }
-.catalog .slider {
+.container .catalog .slider {
   position: relative;
   margin: 0 auto;
   max-width: 1248px;
   width: 100%;
 }
-.catalog .slider .slick-list {
+.container .catalog .slider .slick-list {
   overflow: hidden;
 }
-.catalog .slider .slick-track {
+.container .catalog .slider .slick-track {
   display: flex;
   justify-content: center;
 }
-.catalog .slider__item {
+.container .catalog .slider__item {
   cursor: pointer;
 }
-.catalog .slider__item p {
+.container .catalog .slider__item p {
   margin: 0;
   margin-bottom: 45px;
   color: #5b6276;
@@ -151,34 +153,34 @@ h2 {
   height: 26px;
   line-height: 26px;
 }
-.catalog .slider__item img {
+.container .catalog .slider__item img {
   width: 288px;
   height: 270.12px;
 }
-.catalog .slider__item .slider__border {
+.container .catalog .slider__item .slider__border {
   background: #d7dce7;
   height: 4px;
   width: 40px;
   margin-left: 176px;
 }
-.catalog .slider :hover {
+.container .catalog .slider :hover {
   animation-name: circle;
   position: relative;
 }
-.catalog .slick-arrow {
+.container .catalog .slick-arrow {
   font-size: 0px;
   width: 40px;
   height: 40px;
   border-radius: none;
   outline: none;
 }
-.catalog .slick-arrow.slick-prev {
+.container .catalog .slick-arrow.slick-prev {
   left: 0;
   background: url("../img/arrow-left.png") 0 0/100% no-repeat;
   outline: none;
   border: none;
 }
-.catalog .slick-arrow.slick-next {
+.container .catalog .slick-arrow.slick-next {
   right: 0;
   background: url("../img/arrow-right.png") 0 0/100% no-repeat;
   outline: none;
@@ -186,8 +188,7 @@ h2 {
   margin-left: 40px;
   margin-top: 30px;
 }
-
-.geography {
+.container .geography {
   max-width: 1920px;
   overflow: hidden;
   height: 657px;
@@ -195,16 +196,16 @@ h2 {
   background: url(../img/Russia.png) no-repeat 210px 0px/auto 100%, linear-gradient(224.82deg, #030b41 0.85%, #000b52 57.3%, #1900ae 102.14%), #000c52;
   position: relative;
 }
-.geography .map {
+.container .geography .map {
   display: flex;
   cursor: pointer;
 }
-.geography .map img {
+.container .geography .map img {
   width: 32.74px;
   height: 32.74px;
   opacity: 0.4;
 }
-.geography .map p {
+.container .geography .map p {
   margin: 0px;
   color: #d7dce7;
   font-weight: 400;
@@ -212,107 +213,107 @@ h2 {
   line-height: 21px;
   opacity: 0.4;
 }
-.geography .map__north {
+.container .geography .map__north {
   display: flex;
   position: absolute;
   left: 467px;
   top: 243px;
 }
-.geography .map__north p {
+.container .geography .map__north p {
   margin-top: 12px;
   margin-left: 7px;
 }
-.geography .map__central {
+.container .geography .map__central {
   display: flex;
   position: absolute;
   left: 427px;
   top: 310px;
 }
-.geography .map__central p {
+.container .geography .map__central p {
   margin-left: 9.28px;
 }
-.geography .map__South {
+.container .geography .map__South {
   display: block;
   position: absolute;
   left: 390px;
   top: 377px;
 }
-.geography .map__South p {
+.container .geography .map__South p {
   margin-left: 9.28px;
 }
-.geography .map__uralsky {
+.container .geography .map__uralsky {
   display: flex;
   position: absolute;
   left: 663px;
   top: 317.79px;
 }
-.geography .map__uralsky p {
+.container .geography .map__uralsky p {
   margin-left: 6.55px;
   margin-top: 10px;
 }
-.geography .map__uralsky {
+.container .geography .map__uralsky {
   display: flex;
   position: absolute;
   left: 663px;
   top: 317.79px;
 }
-.geography .map__uralsky p {
+.container .geography .map__uralsky p {
   margin-left: 6.55px;
   margin-top: 10px;
 }
-.geography .map__privolzhsky {
+.container .geography .map__privolzhsky {
   display: flex;
   position: absolute;
   left: 580px;
   top: 387px;
 }
-.geography .map__privolzhsky p {
+.container .geography .map__privolzhsky p {
   margin-left: 6.55px;
   margin-top: 10px;
 }
-.geography .map__siberian {
+.container .geography .map__siberian {
   display: flex;
   position: absolute;
   left: 767px;
   top: 460px;
 }
-.geography .map__siberian p {
+.container .geography .map__siberian p {
   margin-left: 6.55px;
   margin-top: 10px;
 }
-.geography .map :hover p {
+.container .geography .map :hover p {
   opacity: 1;
 }
-.geography .map :hover img {
+.container .geography .map :hover img {
   opacity: 1;
 }
-.geography .map__farEastern {
+.container .geography .map__farEastern {
   display: flex;
   position: absolute;
   left: 941px;
   top: 262px;
 }
-.geography .map__farEastern p {
+.container .geography .map__farEastern p {
   margin-left: 3px;
   margin-top: 8px;
 }
-.geography .supplies {
+.container .geography .supplies {
   margin-left: 1182px;
   margin-top: 296px;
 }
-.geography .supplies h4 {
+.container .geography .supplies h4 {
   margin: 0px;
   font-weight: 400;
   font-size: 26px;
   line-height: 36px;
   color: #fdfdfd;
 }
-.geography .supplies__border {
+.container .geography .supplies__border {
   width: 40px;
   margin-top: 10px;
   border-bottom: 2px solid rgba(164, 167, 226, 0.4);
 }
-.geography .supplies p {
+.container .geography .supplies p {
   width: 390px;
   margin-top: 17px;
   font-weight: 400;
@@ -321,15 +322,14 @@ h2 {
   color: rgba(253, 253, 253, 0.8);
   border: none;
 }
-
-.company {
+.container .company {
   overflow: hidden;
 }
-.company__text {
+.container .company__text {
   display: flex;
   justify-content: center;
 }
-.company__text p {
+.container .company__text p {
   margin: 0px;
   width: 591px;
   font-weight: 400;
@@ -338,24 +338,24 @@ h2 {
   text-align: center;
   color: #5b6276;
 }
-.company-block {
+.container .company-block {
   display: flex;
   justify-content: space-between;
   margin: 20px 443px 122px 344px;
 }
-.company-block__card {
+.container .company-block__card {
   position: relative;
   width: 220px;
   height: 220px;
   background: linear-gradient(224.82deg, #010b4b 0.85%, #1900ae 58.45%, #4731fc 102.14%);
   border-radius: 6px;
 }
-.company-block__card img {
+.container .company-block__card img {
   width: 64px;
   height: 64px;
   margin: 32px 78px 0px 78px;
 }
-.company-block__card p {
+.container .company-block__card p {
   margin: 0;
   font-weight: 400;
   font-size: 17px;
@@ -366,14 +366,14 @@ h2 {
   justify-content: center;
   color: #fdfdfd;
 }
-.company-block__card__background {
+.container .company-block__card__background {
   position: absolute;
   width: 600px;
   height: 2000px;
   right: 200px;
   top: 0;
 }
-.company-block .company-block__background {
+.container .company-block .company-block__background {
   position: absolute;
   width: 392px;
   height: 387px;
@@ -381,25 +381,24 @@ h2 {
   top: 0;
   z-index: 1;
 }
-
-.call {
+.container .call {
   background: linear-gradient(224.82deg, #030b41 0.85%, #000b52 57.3%, #1900ae 102.14%), #000c52;
   height: 571px;
 }
-.call__title {
+.container .call__title {
   padding-top: 119px;
   font-weight: 500;
   font-size: 35px;
   line-height: 49px;
   color: #fdfdfd;
 }
-.call-border {
+.container .call-border {
   width: 40px;
   height: 2px;
   background-color: #a4a7e2;
   opacity: 0.4;
 }
-.call__text {
+.container .call__text {
   width: 519px;
   height: 65.97px;
   font-weight: 400;
@@ -407,10 +406,10 @@ h2 {
   line-height: 33px;
   color: rgba(253, 253, 253, 0.8);
 }
-.call-form {
+.container .call-form {
   display: flex;
 }
-.call-form input {
+.container .call-form input {
   width: 410px;
   height: 15px;
   background: #f4f4f4;
@@ -419,13 +418,13 @@ h2 {
   padding: 19px 39px;
   margin-right: 38px;
 }
-.call .button-send {
+.container .call .button-send {
   width: 164px;
   height: 58px;
   border-radius: 35px;
   background: linear-gradient(101.49deg, #a5a8f5 17.34%, #b8baf5 53.55%, #9296f7 86.43%);
 }
-.call__afterword {
+.container .call__afterword {
   padding-top: 24px;
   font-weight: 400;
   font-size: 11px;
@@ -433,41 +432,40 @@ h2 {
   color: #fdfdfd;
   opacity: 0.6;
 }
-.call__afterword .call__date {
+.container .call__afterword .call__date {
   font-weight: 400;
   font-size: 11px;
   line-height: 18px;
   color: #fdfdfd;
   opacity: 0.6;
 }
-.call__afterword .call__accord {
+.container .call__afterword .call__accord {
   color: #fdfdfd;
 }
-
-footer {
+.container footer {
   display: flex;
   max-width: 1920px;
   height: 493px;
   background: #0c1431;
   overflow: hidden;
 }
-footer .internal {
+.container footer .internal {
   margin-top: 63px;
 }
-footer .footer-logo {
+.container footer .footer-logo {
   margin-left: 348px;
 }
-footer .footer-menu {
+.container footer .footer-menu {
   margin-left: 46px;
 }
-footer .footer-menu span {
+.container footer .footer-menu span {
   font-weight: 600;
   font-size: 15px;
   line-height: 23px;
   color: #f1f1f1;
   margin-bottom: 8px;
 }
-footer .footer-menu a {
+.container footer .footer-menu a {
   display: block;
   margin-top: 8px;
   opacity: 0.7;
@@ -477,10 +475,10 @@ footer .footer-menu a {
   font-size: 13px;
   line-height: 21px;
 }
-footer .footer-menu__map {
+.container footer .footer-menu__map {
   margin-top: 91px;
 }
-footer .footer-menu__map a {
+.container footer .footer-menu__map a {
   text-decoration-line: underline;
   font-weight: 400;
   font-size: 10px;
@@ -488,7 +486,7 @@ footer .footer-menu__map a {
   color: rgba(244, 244, 244, 0.5019607843);
   opacity: 0.5;
 }
-footer .footer-menu__map :hover {
+.container footer .footer-menu__map :hover {
   color: #a5a8f5;
 }
 
@@ -504,7 +502,7 @@ footer .footer-menu__map :hover {
     margin: 0px 0px;
   }
   .container header {
-    width: 100vw;
+    width: 100%;
     height: 470px;
   }
   .container header .burger {
@@ -643,7 +641,7 @@ footer .footer-menu__map :hover {
     margin-top: 45px;
     margin-left: auto;
     margin-right: auto;
-    width: 90vw;
+    width: 328px;
     display: block;
   }
   .container header .header-form__input {
@@ -724,7 +722,8 @@ footer .footer-menu__map :hover {
     margin-right: auto;
   }
   .container .call {
-    height: 643px;
+    height: 100%;
+    width: 100vw;
   }
   .container .call h4 {
     font-style: normal;
@@ -740,7 +739,7 @@ footer .footer-menu__map :hover {
     margin-right: auto;
   }
   .container .call__text {
-    width: 90vw;
+    width: 328px;
     margin-top: 33px;
     margin-bottom: 40px;
     font-weight: 400;
@@ -756,15 +755,18 @@ footer .footer-menu__map :hover {
     margin-right: auto;
     margin-left: auto;
   }
-  .container .call-form__input {
+  .container .call-form .call-form__input {
     width: 328px;
     margin-top: 16px;
     height: 54px;
+    margin-right: auto;
+    margin-left: auto;
   }
-  .container .call-form button {
+  .container .call-form .button-send {
     width: 328px;
     margin-top: 21px;
     height: 54px;
+    border: 1px solid gray;
   }
   .container .call__afterword {
     width: 80vw;
